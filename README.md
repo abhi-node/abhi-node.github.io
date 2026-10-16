@@ -12,6 +12,7 @@ Personal site built with [Astro](https://astro.build).
    date: 2026-10-16
    description: Optional one-liner.
    tags: [optional, tags]
+   thumbnail: ./images/preview.png   # optional, shown in post lists
    draft: false
    ---
 

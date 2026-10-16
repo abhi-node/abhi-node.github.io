@@ -3,6 +3,7 @@ title: Hello, world
 date: 2026-10-16
 description: First post, and how this site works.
 tags: [meta]
+thumbnail: ./images/hello-world.svg
 ---
 
 This site is just a folder of Markdown files. Each post lives in `src/content/posts/`.
@@ -36,5 +37,9 @@ You can also link to an image hosted elsewhere with its full URL:
 ```md
 ![A diagram](https://example.com/diagram.png)
 ```
+
+## Thumbnails
+
+Add `thumbnail: ./images/your-image.png` to a post's frontmatter to show a small preview next to it in the post list. Posts without one get a placeholder.
 
 That's it. Write, commit, push.
