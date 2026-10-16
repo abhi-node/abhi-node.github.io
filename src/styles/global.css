@@ -129,7 +129,62 @@ pre code { background: none; border: 0; padding: 0; font-size: inherit; }
   .astro-code, .astro-code span { color: var(--shiki-dark) !important; }
 }
 
-/* Roles (about page) */
+/* Home */
+.hero h1 { font-size: 1.9rem; }
+.hero .meta { margin-bottom: 1.5rem; }
+.more { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); text-decoration: none; }
+
+/* Project cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s, transform 0.15s;
+}
+.card:hover { color: var(--text); border-color: var(--muted); transform: translateY(-2px); }
+.thumb {
+  aspect-ratio: 16 / 10;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--code-bg);
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: grid;
+  place-items: center;
+}
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb span {
+  font-family: var(--mono);
+  font-weight: 600;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+}
+.card-body { display: flex; flex-direction: column; flex: 1; padding: 0.9rem 1rem 1rem; }
+.card-body h3 { margin: 0 0 0.35rem; font-size: 1rem; }
+.card-body p { margin: 0 0 1rem; font-size: 0.92rem; line-height: 1.55; color: var(--muted); }
+.card-foot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Roles */
 .roles { list-style: none; padding: 0; margin: 0; }
 .roles li {
   display: flex;
