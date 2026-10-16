@@ -18,5 +18,6 @@ Personal site built with [Astro](https://astro.build).
    Write here.
    ```
 
-2. Preview with `npm run dev` (http://localhost:4321).
-3. Commit and push to `main`. GitHub Actions deploys it.
+2. Images go in `src/content/posts/images/`; embed with `![alt](./images/file.png)`.
+3. Preview with `npm run dev` (http://localhost:4321).
+4. Commit and push to `main`. GitHub Actions deploys it.
