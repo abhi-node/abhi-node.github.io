@@ -1,12 +1,50 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const gh = 'https://github.com/abhi-node';
 ---
 
 <Base title="About">
   <h1>About</h1>
   <p>
-    I'm Abhijith Balagurusamy. Edit <code>src/pages/about.astro</code> to say more about
-    yourself here.
+    I'm Abhijith, a software engineer and Computer Engineering student at the University of
+    Toronto. I mostly work on real-time systems and backend infrastructure.
   </p>
-  <p>Find me on <a href="https://github.com/abhi-node">GitHub</a>.</p>
+  <p>
+    I just love programming, especially the parts that push you close to the machine or into
+    the math: performance engineering, compilers, operating systems, computer architecture,
+    machine learning, reinforcement learning and game theory. My favorite way to learn something
+    is to build it from scratch.
+  </p>
+
+  <h2>Work</h2>
+  <ul>
+    <li>
+      <strong>Crossover / Alpha School</strong>: a real-time WebRTC proctoring platform in Go/Pion
+      on AWS ECS, plus the S3/Lambda/SQS pipeline processing 400+ hours of video a day.
+    </li>
+    <li>
+      <strong>Gauntlet AI</strong>: real-time voice agents (speech to SQL in under 600 ms) and
+      agentic RAG systems.
+    </li>
+    <li>
+      <strong>Beth Israel Deaconess Medical Center</strong>: clinical trial software on AWS and
+      TensorFlow models on sleep EEG data.
+    </li>
+  </ul>
+
+  <h2>Things I've built</h2>
+  <ul>
+    <li><a href={`${gh}/closed-code`}>closed-code</a>: an AI coding agent CLI in Rust with sandboxing and sub-agents</li>
+    <li><a href={`${gh}/minidb`}>minidb</a>: a SQL database engine in C with a B+-tree and write-ahead log</li>
+    <li><a href={`${gh}/gum-chess-engine`}>gum-chess-engine</a>: an alpha-beta chess engine in C, about 1700 Elo</li>
+    <li><a href={`${gh}/sem-pdf-viewer`}>sem-pdf-viewer</a>: a semantic PDF reader with RAG chat over pgvector</li>
+    <li><a href={`${gh}/dueled`}>dueled</a>: a 1v1 arena game with a from-scratch ray-casting renderer</li>
+    <li><a href={`${gh}/audio-rtc-calling`}>audio-rtc-calling</a>: real-time audio calls on Go and Pion WebRTC</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    <a href={gh}>GitHub</a> · abhibalagurusamy@gmail.com
+  </p>
 </Base>
